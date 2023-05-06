@@ -10,6 +10,7 @@ intents:
   - give_compliment
   - respond_to_question
   - say_goodbye
+  - out_of_scope
 
 responses:
   utter_greet:
@@ -57,8 +58,22 @@ responses:
   utter_did_that_help:
   - text: "I hope that helped"
 
+  utter_please_rephrase:
+  - text: I didn't understand that. Can you please rephrase it?
+
+
 actions:
   - action_custom_fallback  
+
+# slots:
+#   fallback:
+#     type: bool
+#     initial_value: false
+#     mappings:
+#     - type: from_trigger_intent
+#       intent: non_existent_intent
+
+
 
 
 session_config:
