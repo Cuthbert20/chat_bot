@@ -2,12 +2,14 @@ version: "3.1"
 
 intents:
   - greet
-  - goodbye
-  - affirm
-  - deny
-  - mood_great
-  - mood_unhappy
-  - bot_challenge
+  - small_talk
+  - ask_about_hobbies
+  - ask_about_work
+  - ask_about_family
+  - ask_about_travel
+  - give_compliment
+  - respond_to_question
+  - say_goodbye
 
 responses:
   utter_greet:
