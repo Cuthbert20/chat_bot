@@ -1,0 +1,7 @@
+first_date_practice_bot_env/
+models/
+data/
+actions/
+.rasa/
+config.yml
+credentials.yml
