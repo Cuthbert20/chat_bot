@@ -42,8 +42,20 @@ responses:
   utter_respond_to_question:
   - text: "Well, I'm an AI, so I don't have personal experiences, but I'm here to help you practice your conversation skills!"
 
-  utter_say_goodbye:
+  utter_goodbye:
   - text: "It was great talking to you! Have a good day!"
+
+  utter_iamabot:
+  - text: "I am a Cool fun bot"
+
+  utter_happy:
+  - text: "I am happy, I hope you are too"
+
+  utter_cheer_up:
+  - text: "Put a smile on your face"
+
+  utter_did_that_help:
+  - text: "I hope that helped"
 
 
 session_config:

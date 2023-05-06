@@ -1,91 +1,50 @@
 #### This file contains tests to evaluate that your bot behaves as expected.
 #### If you want to learn more, please see the docs: https://rasa.com/docs/rasa/testing-your-assistant
 
+version: "2.0"
 stories:
-- story: happy path 1
+
+- story: Greeting and small talk
   steps:
   - user: |
-      hello there!
+      Hi
     intent: greet
   - action: utter_greet
   - user: |
-      amazing
-    intent: mood_great
-  - action: utter_happy
+      I love trying new restaurants too
+    intent: small_talk
+  - action: utter_small_talk
 
-- story: happy path 2
+- story: Asking about hobbies and work
   steps:
   - user: |
-      hello there!
-    intent: greet
-  - action: utter_greet
+      What do you like to do for fun?
+    intent: ask_about_hobbies
+  - action: utter_ask_about_hobbies
   - user: |
-      amazing
-    intent: mood_great
-  - action: utter_happy
-  - user: |
-      bye-bye!
-    intent: goodbye
-  - action: utter_goodbye
+      What's your job?
+    intent: ask_about_work
+  - action: utter_ask_about_work
 
-- story: sad path 1
+- story: Compliment and asking about travel
   steps:
   - user: |
-      hello
-    intent: greet
-  - action: utter_greet
+      You're so funny!
+    intent: give_compliment
+  - action: utter_give_compliment
   - user: |
-      not good
-    intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - user: |
-      yes
-    intent: affirm
-  - action: utter_happy
+      Have you been to any interesting places lately?
+    intent: ask_about_travel
+  - action: utter_ask_about_travel
 
-- story: sad path 2
+- story: Responding to a question and saying goodbye
   steps:
   - user: |
-      hello
-    intent: greet
-  - action: utter_greet
+      What was the last movie you watched?
+    intent: respond_to_question
+  - action: utter_respond_to_question
   - user: |
-      not good
-    intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - user: |
-      not really
-    intent: deny
-  - action: utter_goodbye
+      I have to go now
+    intent: say_goodbye
+  - action: utter_say_goodbye
 
-- story: sad path 3
-  steps:
-  - user: |
-      hi
-    intent: greet
-  - action: utter_greet
-  - user: |
-      very terrible
-    intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - user: |
-      no
-    intent: deny
-  - action: utter_goodbye
-
-- story: say goodbye
-  steps:
-  - user: |
-      bye-bye!
-    intent: goodbye
-  - action: utter_goodbye
-
-- story: bot challenge
-  steps:
-  - user: |
-      are you a bot?
-    intent: bot_challenge
-  - action: utter_iamabot
