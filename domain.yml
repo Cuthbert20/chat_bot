@@ -13,23 +13,38 @@ intents:
 
 responses:
   utter_greet:
-  - text: "Hey! How are you?"
+  - text: "Hi! It's nice to meet you. How's your day going?"
+  - text: "Hi, I have been looking forward to meeting you."
+  - text: "You look great tonight"
+  - text: "Hello! I'm glad we could meet up. How was your day?"
+  - text: "Hey there! How's everything going for you?"
 
-  utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
+  utter_small_talk:
+  - text: "I really enjoy trying out new restaurants. How about you?"
+  - text: "One of my favorite pastimes is exploring new cuisines. What do you think about that?"
+  - text: "I love discovering new places to eat. Are you a foodie too?"
 
-  utter_did_that_help:
-  - text: "Did that help you?"
+  utter_ask_about_hobbies:
+  - text: "So, what kind of hobbies are you into?"
 
-  utter_happy:
-  - text: "Great, carry on!"
+  utter_ask_about_work:
+  - text: "What do you do for work?"
 
-  utter_goodbye:
-  - text: "Bye"
+  utter_ask_about_family:
+  - text: "Do you have any siblings?"
 
-  utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
+  utter_ask_about_travel:
+  - text: "Have you traveled anywhere recently?"
+
+  utter_give_compliment:
+  - text: "You have a great sense of humor!"
+
+  utter_respond_to_question:
+  - text: "Well, I'm an AI, so I don't have personal experiences, but I'm here to help you practice your conversation skills!"
+
+  utter_say_goodbye:
+  - text: "It was great talking to you! Have a good day!"
+
 
 session_config:
   session_expiration_time: 60
