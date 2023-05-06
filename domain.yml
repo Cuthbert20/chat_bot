@@ -57,6 +57,9 @@ responses:
   utter_did_that_help:
   - text: "I hope that helped"
 
+actions:
+  - action_custom_fallback  
+
 
 session_config:
   session_expiration_time: 60
